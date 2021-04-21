@@ -26,7 +26,7 @@ ul :hover {
 }
 
 #wrapper {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -203,4 +203,80 @@ footer {
 #layout_2 footer {
     position: fixed;
     bottom: 0;
+}
+
+#layout_3 nav {
+    background-color: #222222;
+    height: 60px;
+    width: 100%;
+}
+
+#layout_3 nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#layout_3 nav li {
+    width: 233px;
+    max-width: 33.33%;
+}
+
+#layout_3 nav ul li a {
+    display: flex;
+    height: 62px;
+    align-items: center;
+    justify-content: center;
+}
+
+#layout_3 li:last-child {
+    background-color: #2F96B4;
+}
+
+#layout_3 main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#layout_3 .square {
+    position: relative;
+    display: flex;
+    background-image: none;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    width: 333px;
+    height: 348px;
+}
+
+#layout_3 .plus {
+    background-image: url("../images/plus-solid.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 86px;
+    height: 86px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#layout_3 .star {
+    position:absolute;
+    background-repeat: no-repeat;
+    top: 8px; 
+    right: 13px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-image: url("../images/star.svg");
+}
+
+#squareMain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 666px) {
+    #layout_3 main {
+        justify-content: center;
+    }
 }
